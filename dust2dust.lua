@@ -11,7 +11,7 @@ function init()
 
   -- receive data using a callback
   dust2dust:receive(function(data)
-    print("received data:")
+    -- data is a table
     tabutil.print(data)
   end)
 

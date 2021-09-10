@@ -53,6 +53,7 @@ function Dust2Dust:receive(fn)
       old_osc_in(path,args,from)
     end
     if path=="/dust2dust" then
+      print("recevied data: "..args[1])
       local d=json.decode(args[1])
       fn(d)
     end
