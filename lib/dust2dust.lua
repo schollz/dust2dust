@@ -46,6 +46,7 @@ function Dust2Dust:new(o)
 end
 
 function Dust2Dust:receive(fn)
+  -- if needed, you can preserve the old osc.event
   --local old_osc_in=osc.event
   osc.event=function(path,args,from)
     if old_osc_in~=nil then

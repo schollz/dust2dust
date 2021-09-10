@@ -19,7 +19,7 @@ function init()
     while true do
       clock.sleep(1)
       -- send a table of data using dust2dust:send(t)
-      dust2dust:send({hello="world",1,2,3,tables={are="cool"}})
+      dust2dust:send({hello="world",1,2,3,tables={are="cool"},beats=clock.get_beats()})
     end
   end)
 
